@@ -2,8 +2,8 @@ package com.lewilewi.AoC2020
 
 import android.util.Log
 
-public class Day2(lines: List<String>) : IAoC {
-    var lines = lines
+public class Day2(input : String) : IAoC {
+    val lines = input.split("\n")
 
     override fun Result1(): String {
         var result = 0

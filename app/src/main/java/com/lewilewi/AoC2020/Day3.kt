@@ -2,8 +2,8 @@ package com.lewilewi.AoC2020
 
 import android.util.Log
 
-public class Day3(lines: List<String>) : IAoC {
-    var lines = lines
+public class Day3(input : String) : IAoC {
+    val lines = input.split("\n")
 
     fun CalcSlope(stepCol: Int, stepRow: Int): Long {
         var result = 0L

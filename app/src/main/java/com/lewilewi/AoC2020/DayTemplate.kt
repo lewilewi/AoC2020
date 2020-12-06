@@ -2,9 +2,8 @@ package com.lewilewi.AoC2020
 
 import java.io.InputStreamReader
 
-public class DayTemplate(lines: List<String>) : IAoC {
-
-    val lines = lines
+public class DayTemplate(input : String) : IAoC {
+    val lines = input.split("\n")
 
     override fun Result1(): String {
         var result = 0

@@ -11,8 +11,8 @@ public class AoCFactory {
     fun CreateAoC(day: Int, c: Context): IAoC {
         var name = "Day$day"
         val reader = InputStreamReader(c.assets.open(name))
-        val lines = reader.readLines()
+        val input = reader.readText()
         var cl = Class.forName("com.lewilewi.AoC2020." + name)
-        return cl.getConstructor(List::class.java).newInstance(lines) as IAoC
+        return cl.getConstructor(String::class.java).newInstance(input) as IAoC
     }
 }

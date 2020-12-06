@@ -2,10 +2,10 @@ package com.lewilewi.AoC2020
 
 import java.io.InputStreamReader
 
-public class Day5(lines: List<String>) : IAoC {
-
-    val lines = lines
+public class Day5(input : String) : IAoC {
+    val lines = input.split("\n")
     var ids = mutableListOf<Int>()
+
     override fun Result1(): String {
         var result = 0
 
